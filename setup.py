@@ -26,6 +26,7 @@ from ansible.release import __version__, __author__
 SYMLINK_CACHE = 'SYMLINK_CACHE.json'
 
 
+# 找到当前目录下的链接文件（链接到当前文件夹文件），输出结果[target] = link
 def _find_symlinks(topdir, extension=''):
     """Find symlinks that should be maintained
 
